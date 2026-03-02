@@ -159,6 +159,7 @@ AI Agent ──► AIController (Context)
 CombatManager (Singleton)
    ├── Token System   ◄──► AskTicket (BT Strategy) — limits simultaneous attackers
    └── Slot System    ◄──► TSP + RunQuery           — distributes positioning targets
+   
 **Architectural Highlights**
 
 - Separation of concerns is consistently maintained: input, movement, animation, combat, and AI decision-making are each isolated behind interfaces and never directly reference each other's implementations.
